@@ -1,6 +1,13 @@
 # Todo App
 
-# Login Account
+### please note that the APIs used does not store any changes and you have to use one of the provided emails below to login or register
+
+## getting started
+
+- Open index.html
+- Register or login with one of the provided emails below and type any password
+
+## emails to use
 
 ```
 [
