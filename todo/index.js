@@ -45,15 +45,14 @@ function listTodos() {
   table.innerHTML = "";
   //Inserting a row that contains the headers
   let row = table.insertRow();
-  row.innerHTML =
-    ' <tr> <th colspan="3">Title</th> <th colspan="1">Settings</th> </tr>';
+  row.innerHTML = " <tr> <th>Title</th> <th>Settings</th> </tr>";
 
   //A loop that iterates on the todosList creating a new row everytime containing
   //a single todo with its edit and delete buttons.
   for (let i = 0; i < todosList.length; i++) {
     let row = table.insertRow(-1);
     row.innerHTML = `<tr>
-        <td colspan="3">
+        <td>
           <input type="checkbox" class="titleInput" id='todo${i}' name="todo" value="todo" ${
       todosList[i].completed ? "checked" : ""
     }/>
@@ -61,7 +60,7 @@ function listTodos() {
       todosList[i].title
     }</label>
         </td>
-        <td colspan="1">
+        <td>
         <button id="${
           todosList[i].id + "e"
         }" type="button" class="btn btn-secondary me-2s" data-bs-toggle="modal" data-bs-target="#editModal" data-bs-whatever="@mdo">Edit</button>
